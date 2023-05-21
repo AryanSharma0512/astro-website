@@ -11,6 +11,10 @@ html, body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("images/backgroundImage.jpg"); 
+  background-size: auto 100%;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 code {

@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #a3b4da;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+.contact {
+  background-image: linear-gradient(rgba(135, 141, 163, 0.7), rgba(4, 9, 30, 0.7))
+}
