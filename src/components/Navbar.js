@@ -10,6 +10,8 @@ const Navbar = () => {
         <div className="flex-none nav-links">
             <ul className="my-5 menu-horizontal px-1 space-x-3">
                 <li><Link to='/'>HOME</Link></li>
+                {/* <li><Link to='/'></Link></li>
+                <li><Link to='/'></Link></li> */}
                 <li><Link to='/about'>ABOUT</Link></li>
                 <li><Link to='/contact'>CONTACT US</Link></li>
             </ul>
