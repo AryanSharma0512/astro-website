@@ -37,6 +37,9 @@
   }
 }
 
+.nav{
+  position: fixed;
+}
 .nav-links ul li{
   list-style: none;
   display: inline-block;
@@ -56,8 +59,23 @@
   width: 100%;
 }
 .contact {
-  background-image: linear-gradient(rgba(135, 141, 163, 0.7), rgba(4, 9, 30, 0.7))
+  background-image: linear-gradient(rgba(135, 141, 163, 0.7), rgba(4, 9, 30, 0.7));
+  background-size: auto 100%;
 }
+
 .home {
-  background-image: linear-gradient(rgba(143, 143, 143, 0.9), rgba(4, 9, 30, 0.9))
+  /* background-image: linear-gradient(rgba(143, 143, 143, 0.9), rgba(4, 9, 30, 0.9));
+  margin-bottom: 0;
+  height: 150px;
+  width: 300px; */
+  background-color: #1f2028;
+  background-size: auto 100%;
+  justify-content: center;
+  display: flex;
+}
+.homeText {
+  
+  bottom: 20 px;
+  position: absolute;
+  color: white;
 }
