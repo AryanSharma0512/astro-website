@@ -3,9 +3,9 @@ import people from './TeamMembers';
 
 const Contact = () => {
   return (
-    <div className="home h-min-screen w-min-screen">
-      <div className="contact md:py-60 flex justify-center">
-        <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-12 px-6 lg:px-8 xl:grid-cols-3">
+    <div className="min-h-screen min-w-screen">
+      <div className="contact min-h-screen min-w-screen py-24 md:py-60 justify-center">
+        <div className="mx-auto grid max-w-7xl gap-x-24 gap-y-16 px-6 lg:px-8 xl:grid-cols-3">
           <div className="max-w-2xl">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our leadership</h2>
             <p className="mt-6 text-lg leading-8 text-white">
