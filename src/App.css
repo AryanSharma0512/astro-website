@@ -68,7 +68,8 @@
   margin-bottom: 0;
   height: 150px;
   width: 300px; */
-  background-color: #1f2028;
+  /* background-color: #1f2028; */
+  background-color: #16181e;
   background-size: auto 100%;
   justify-content: center;
   display: flex;
@@ -78,4 +79,46 @@
   bottom: 20 px;
   position: absolute;
   color: white;
+}
+
+.logo {
+  height: 100px;
+  border-radius: 15px;
+}
+
+.loader {
+  /* padding-top: 75%;
+  position:relative;
+  animation: myanimation 5s linear; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  border-color: #16181e;
+}
+
+.loader-img {
+  animation: moveLoader 10s linear infinite;
+}
+
+@keyframes myanimation
+{
+  0% {
+    left: 0;
+  }
+  10% {
+    left: 50%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes moveLoader {
+  0% {
+    transform: translate(-350%, 300%);
+  }
+  100% {
+    transform: translate(200%, -20%);
+  }
 }
