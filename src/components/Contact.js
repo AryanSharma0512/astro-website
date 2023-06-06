@@ -1,32 +1,28 @@
 import React from 'react';
-import people from './TeamMembers';
+// import people from './TeamMembers';
 
 const Contact = () => {
   return (
-    <div className="min-h-screen min-w-screen">
-      <div className="contact min-h-screen min-w-screen py-24 md:py-60 justify-center">
-        <div className="mx-auto grid max-w-7xl gap-x-24 gap-y-16 px-6 lg:px-8 xl:grid-cols-3">
-          <div className="max-w-2xl">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our leadership</h2>
-            <p className="mt-6 text-lg leading-8 text-white">
-              Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae elementum enim vitae ullamcorper
-              suspendisse.
-            </p>
+    <div className="min-h-screen min-w-screen text-white">
+      <div className=" contact flex items-center justify-center pt-56 text-white text-4xl">
+        <h1>Reach us at</h1>
+      </div>
+      <div className="flex flex-col space-around mx-96 space-y-10 mt-24">
+        <div className="card w-72 glass text-white order-1">
+          <div className="card-body">
+            <p className="card-title text-left">E-mail</p>
+            <p className="text-center text-lg">sample@gmail.com</p>
           </div>
-          <ul role="list" className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-12 xl:col-span-2">
-            {people.map((person) => (
-              <li key={person.name}>
-                <div className="flex items-center gap-x-6">
-                  <img className="h-16 w-16 rounded-full" src={person.imageUrl} alt="" />
-                  <div>
-                    <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
-                    <p className="text-sm font-semibold leading-6 text-indigo-600">{person.role}</p>
-                  </div>
-                </div>
-              </li>
-            ))}
-          </ul>
         </div>
+        <div className="card w-72 glass text-white order-2 ml-auto">
+          <div className="card-body">
+            <p className="text-xl font-semibold text-right">Phone</p>
+            <p className="text-center text-lg">+91-000-0000-000</p>
+          </div>
+        </div>
+      </div>
+      <div className="location">
+        <iframe className="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40509.053484798635!2d165.94453488330254!3d-50.61195941509392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa9b37960d3cdddd7%3A0xbd1bca4ab10f2187!2sDisappointment%20Island!5e0!3m2!1sen!2sin!4v1686037175476!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" />
       </div>
     </div>
   )
