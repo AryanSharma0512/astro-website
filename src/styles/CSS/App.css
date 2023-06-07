@@ -1,5 +1,8 @@
 .nav{
   position: fixed;
+  z-index: 100;
+  background-color: #1f2028;
+  background-size: auto 100%;
 }
 .nav-links ul li{
   list-style: none;
@@ -81,10 +84,10 @@
 }
 
 .location{
-  width: 80%;
+  width: 60%;
   margin: auto;
   padding: 80px 0;
-  border-radius: 10;
+  border-radius: 100;
   z-index: 1000;
 }
 .location iframe{
