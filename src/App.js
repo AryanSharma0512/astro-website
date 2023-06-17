@@ -16,7 +16,6 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   const particlesInit = async (main) => {
-    console.log(main);
     await loadFull(main);
   };
 
@@ -25,21 +24,22 @@ function App() {
     setTimeout(() => {
       setLoading(false);
     }, 2500);
-  }, [])
+  }, []);
   
   return (
     <>
-    <Particles height="100vh" width="100vw" init={particlesInit} options={particlesConfig} />
-    {loading ? <Loader/> : 
-    <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<HomePage />}/>        
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/affiliations" element={<Affiliations />} />
-      </Routes>
-    </BrowserRouter>}
+      <Particles height="100vh" width="100vw" init={particlesInit} options={particlesConfig} />
+      {loading ? <Loader/> : 
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<HomePage />}/>        
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/affiliations" element={<Affiliations />} />
+          </Routes>
+        </BrowserRouter>
+      }
     </>
   );
 }

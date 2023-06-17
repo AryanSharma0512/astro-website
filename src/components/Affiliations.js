@@ -1,6 +1,6 @@
 import React from 'react';
 import Timeline from './Timeline';
-import team from './../utils/TeamMembers';
+import partners from './../utils/Partners';
 
 const Affiliations = () => {
   return (
@@ -11,7 +11,7 @@ const Affiliations = () => {
       </div>
     </div>
     <h2 className="text-center text-white text-6xl affiliations mb-12">We have Onboard</h2>
-    <Timeline nameList={team} />
+    <Timeline nameList={partners} />
     </>
   )
 }

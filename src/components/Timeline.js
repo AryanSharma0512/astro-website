@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './../styles/SCSS/timeline.scss';
+import { Link } from 'react-router-dom';
 
 const Timeline = ({ nameList }) => {
   const timelineRef = useRef(null);
@@ -58,6 +59,11 @@ const Timeline = ({ nameList }) => {
                 <div className="card-body text-white">
                   <h2 className="card-title">{item.name}</h2>
                   <p>{item.role}</p>
+                  {
+                    item.certificate
+                    ? <p><Link to={item.certificate} className="link link-hover" target='_blank'>View Certificate</Link></p>
+                    : <p>{item.description}</p>
+                  }
                 </div>
               </div>
             </div>

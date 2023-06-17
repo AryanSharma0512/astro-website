@@ -49,10 +49,17 @@
   position: absolute;
   color: white;
 }
+.story {
+  color: white;
+}
+.debris {
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 600;
+}
 
 .logo {
-  height: 100px;
-  border-radius: 15px;
+  height: 250px;
+  border-radius: 250px;
 }
 
 .loader {
