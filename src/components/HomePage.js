@@ -27,7 +27,7 @@ const HomePage = () => {
       </div>
       <div className="flex flex-row affiliations text-3xl story px-44">
         <div className="pr-5">
-          ={'>'}
+          {'=>'}
         </div>
         If explained to a 9 year old: It is the junk that was serving us as a satellite or something but, not working currently and is additional to the orbit, disturbing our current projects.
       </div>
